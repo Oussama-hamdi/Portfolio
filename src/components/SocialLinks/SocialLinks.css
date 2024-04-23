@@ -1,0 +1,21 @@
+.nav-links-icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
