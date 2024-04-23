@@ -1,0 +1,114 @@
+.home {
+  height: 100vh;
+}
+
+.home .container {
+  height: 100%;
+}
+
+.home .parent-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.home .parent-content .left-content .greeting {
+  color: var(--blue-card);
+  font-size: 1.7rem;
+}
+
+.home .parent-content .left-content .greeting p:first-child {
+  font-size: 20px;
+}
+
+.home .parent-content .left-content .greeting .name span {
+  color: var(--orange);
+}
+
+.home .parent-content .left-content .greeting .job-title {
+  color: var(--orange);
+}
+
+.resume-btn {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--orange);
+  border: none;
+  color: var(--blue-card);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange);
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 15px var(--gray), 0px 0px 25px var(--orange),
+    0px 0px 35px var(--gray);
+}
+.home .parent-content .right-content .img-parent {
+  width: 350px;
+  height: 350px;
+  background-image: url("../../assets/oussama.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: morph 8s ease-in-out infinite;
+  background-blend-mode: multiply;
+  transition: var(--transition) box-shadow;
+  box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.8);
+}
+
+.home .parent-content .right-content .img-parent:hover {
+  box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.5);
+}
+
+/** Start Media Query **/
+
+@media (max-width: 768px) {
+  .home .parent-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home .parent-content .left-content {
+    text-align: center;
+  }
+
+  .home .parent-content .left-content .resume-btn {
+    text-align: center;
+  }
+
+  .home .parent-content .right-content {
+    margin-top: 60px;
+  }
+
+  .home .parent-content .right-content .img-parent {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/** End Media Query **/
+
+/** Start Animation **/
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/** End Animation **/
