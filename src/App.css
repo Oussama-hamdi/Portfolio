@@ -1,38 +1,83 @@
-:root {
-  --yellow: #f5c32c;
-  --orange: #fca61f;
-  --black: #242d49;
-  --gray: #788097;
-  --blueCard: #ddf8fe;
-  --purple: #rgb(238 210 255);
-  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --orangeCard: rgba(252, 166, 31, 0.45);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: #141825;
 }
 
-* {
-  font-size: 20px;
-  font-weight: normal;
+.root {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .App {
-  overflow: hidden;
-  padding: 0.5rem 3.5rem;
-  color: var(--black);
-}
-.button {
-  border-radius: 34px;
-  border: none;
-  color: white;
-  font-size: 16px;
-  padding: 11px 26px;
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-}
-.button:hover {
-  background: white;
-  cursor: pointer;
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  font-family: "Roboto", sans-serif;
 }
