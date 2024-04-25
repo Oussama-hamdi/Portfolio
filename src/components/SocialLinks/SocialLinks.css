@@ -1,8 +1,12 @@
-.nav-links-icons {
+/* .nav-links-icons {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+} */
+
+.nav-links-icons {
+  margin: 20px 0;
 }
 
 .nav-links {
@@ -18,4 +22,14 @@
 
 .nav-links li:last-child {
   margin-right: 0;
+}
+
+.nav-links li a {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  transform: translateY(-3px) scale(1.1);
 }

@@ -13,7 +13,7 @@ function SocialLinks() {
             rel="noreferrer"
             target="_blank"
           >
-            <Icon path={mdiFilePdfBox} size={1} />
+            <Icon path={mdiFilePdfBox} size={1} color="#FF5722" />
           </a>
         </li>
         <li>
@@ -22,7 +22,7 @@ function SocialLinks() {
             rel="noreferrer"
             target="_blank"
           >
-            <Icon path={mdiGithub} size={1} />
+            <Icon path={mdiGithub} size={1} color="#333333" />
           </a>
         </li>
         <li>
@@ -31,12 +31,12 @@ function SocialLinks() {
             rel="noreferrer"
             target="_blank"
           >
-            <Icon path={mdiLinkedin} size={1} />
+            <Icon path={mdiLinkedin} size={1} color="#0a66c2" />
           </a>
         </li>
         <li>
           <a href="tel:+21629474820">
-            <Icon path={mdiWhatsapp} size={1} />
+            <Icon path={mdiWhatsapp} size={1} color="#25D366" />
           </a>
         </li>
       </ul>
