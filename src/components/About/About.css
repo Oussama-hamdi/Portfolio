@@ -1,0 +1,73 @@
+.about {
+  background-color: #141825;
+  color: var(--blue-card);
+  margin: 50px 0;
+}
+
+.about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .about .about-content {
+    flex-direction: column;
+  }
+}
+
+.about-content .about-content-img {
+  background-color: aliceblue;
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  align-self: flex-start;
+  filter: grayscale(1);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about .about-content .about-content-img {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+.about-content .about-content-header {
+  color: var(--orange);
+}
+
+.about-content .about-name {
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 700;
+}
+.about .resume-btn {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.about .resume-btn .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--orange);
+  border: none;
+  color: var(--blue-card);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange);
+}
+
+.about .resume-btn .btn:hover {
+  box-shadow: 0px 0px 15px var(--gray), 0px 0px 25px var(--orange),
+    0px 0px 35px var(--gray);
+}
