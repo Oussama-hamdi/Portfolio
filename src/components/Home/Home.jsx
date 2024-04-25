@@ -1,12 +1,11 @@
 import React from "react";
-import Resume from "../../assets/CV_OussemaHamdi_WebDeveloper.pdf";
 import "./Home.css";
 import { ReactTyped } from "react-typed";
-// import SocialLinks from "../SocialLinks/SocialLinks";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 function Home() {
   return (
-    <main className="home">
+    <main id="home" className="home">
       <div className="container">
         <div className="parent-content">
           <div className="left-content">
@@ -26,11 +25,7 @@ function Home() {
                   />
                 </span>
               </p>
-              <div className="resume-btn">
-                <a className="btn" href={Resume} download="Resume">
-                  Download Resume
-                </a>
-              </div>
+              <SocialLinks />
             </div>
           </div>
           {/* Right side content - Image */}
