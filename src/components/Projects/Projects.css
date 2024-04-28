@@ -1,0 +1,88 @@
+.projects {
+  height: 100vh;
+  margin: 100px 0;
+}
+
+.projects .projects-parent {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 50px;
+  gap: 10px;
+}
+
+.projects .projects-parent .project {
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  background-color: #242d49a6;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.projects .project .thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.projects .project .thumbnail .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 58, 58, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.projects .project:hover .thumbnail .overlay {
+  opacity: 1;
+}
+
+.projects .project .thumbnail .overlay a {
+  color: white;
+  background-color: #6e6e80af;
+  border-radius: 50%;
+  padding: 10px;
+  transition: var(--transition);
+}
+
+.projects .project .thumbnail .overlay a:hover {
+  background-color: #6e6e80;
+  transform: scale(1.1);
+}
+
+.projects .project .thumbnail .overlay a:nth-child(1):hover {
+  color: orange;
+}
+.projects .project .thumbnail .overlay a:nth-child(2):hover {
+  color: #333333;
+}
+
+.projects .projects-parent .project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.projects .project .project-info {
+  padding: 20px;
+}
+
+.projects .project .project-info .project-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projects .project .project-info .project-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
