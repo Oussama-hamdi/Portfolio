@@ -1,0 +1,212 @@
+.skills {
+  background-color: #242d493b;
+  padding: 50px 0;
+}
+
+.skills .skills-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 50px;
+  color: var(--blue-card);
+}
+
+@media screen and (max-width: 768px) {
+  .skills .skills-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills .skills-content h3 {
+  color: var(--blue-card);
+  margin-bottom: 2rem;
+  font-size: 24px;
+  text-align: center;
+}
+
+.skills .skills-content .skill-bar {
+  margin-bottom: 40px;
+}
+
+.skills .skills-content .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.skills .skills-content .skill-bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: #242d49;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.skills .skills-content .skill-bar .bar span {
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #2d39e7de;
+  box-shadow: 0 0 1rem 0.2rem #2d39e7de;
+  transition: width 0.5s ease-in-out;
+}
+
+.skills .skills-content .skill-bar .bar span.html,
+.skills .skills-content .skill-bar .bar span.css,
+.skills .skills-content .skill-bar .bar span.javascript,
+.skills .skills-content .skill-bar .bar span.reactjs,
+.skills .skills-content .skill-bar .bar span.git,
+.skills .skills-content .skill-bar .bar span.c,
+.skills .skills-content .skill-bar .bar span.python {
+  animation: 1s ease-in-out forwards;
+}
+
+.skills .skills-content .skill-bar .bar span.html.animate {
+  animation-name: html;
+}
+.skills .skills-content .skill-bar .bar span.css.animate {
+  animation-name: css;
+}
+.skills .skills-content .skill-bar .bar span.javascript.animate {
+  animation-name: javascript;
+}
+.skills .skills-content .skill-bar .bar span.reactjs.animate {
+  animation-name: reactjs;
+}
+.skills .skills-content .skill-bar .bar span.git.animate {
+  animation-name: git;
+}
+.skills .skills-content .skill-bar .bar span.c.animate {
+  animation-name: c;
+}
+.skills .skills-content .skill-bar .bar span.python.animate {
+  animation-name: python;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+@keyframes reactjs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 82%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 87%;
+  }
+}
+@keyframes c {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 47%;
+  }
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+
+/* Right skills */
+
+.professional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.professional .box {
+  position: relative;
+  margin: 10px 0;
+  flex: 1 1 15rem;
+}
+
+.professional .box .circle {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.professional .box .text {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.professional .box .text big {
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.professional .box .text small {
+  display: block;
+  font-weight: 600;
+}
+
+.professional .box .circle .points {
+  width: 2px;
+  height: 10px;
+  background-color: #242d49;
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.professional .box .circle .marked {
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+@keyframes glow {
+  0% {
+    background-color: #242d49;
+    box-shadow: none;
+  }
+  100% {
+    background-color: #2d39e7de;
+    box-shadow: 0 0 1rem 0.1rem #2d39e7de;
+  }
+}
