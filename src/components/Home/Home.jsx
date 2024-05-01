@@ -5,7 +5,7 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 
 function Home() {
   return (
-    <main id="home" className="home">
+    <section id="home" className="home">
       <div className="container">
         <div className="parent-content">
           <div className="left-content">
@@ -30,12 +30,12 @@ function Home() {
           </div>
           {/* Right side content - Image */}
           <div className="right-content">
-            <div div className="img-parent"></div>
+            <div className="img-parent"></div>
           </div>
         </div>
         {/* <SocialLinks />*/}
       </div>
-    </main>
+    </section>
   );
 }
 

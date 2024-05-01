@@ -5,7 +5,7 @@ import Project from "./Project";
 
 function Projects() {
   return (
-    <main className="projects" id="projects">
+    <section className="projects" id="projects">
       <div className="container">
         <SectionHeader title="Projects" />
         <div className="projects-parent">
@@ -21,7 +21,7 @@ function Projects() {
           <Project />
         </div>
       </div>
-    </main>
+    </section>
   );
 }
 

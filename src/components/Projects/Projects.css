@@ -1,6 +1,6 @@
 .projects {
-  height: 100vh;
   margin: 100px 0;
+  position: relative;
 }
 
 .projects .projects-parent {
