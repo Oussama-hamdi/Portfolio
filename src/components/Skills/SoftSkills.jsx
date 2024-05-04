@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 function SoftSkills({ skillName, skillLevel }) {
   const [animationTriggered, setAnimationTriggered] = useState(false);
 
-  console.log("animationTriggered", animationTriggered);
-
   useEffect(() => {
     const skillsSection = document.getElementById("skills-section");
     const windowHeight = window.innerHeight;
