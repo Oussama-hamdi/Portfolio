@@ -8,13 +8,13 @@
   transition: var(--transition);
   color: var(--blue-card);
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
   margin: 50px auto;
   text-align: center;
   width: fit-content;
   padding: 10px 30px;
   cursor: pointer;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
 }
 @media (max-width: 767px) {
   .title {
