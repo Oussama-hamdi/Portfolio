@@ -43,6 +43,13 @@ select {
   font: inherit;
 }
 
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
 p,
 h1,
 h2,
@@ -80,4 +87,21 @@ h6 {
 
 .App {
   font-family: "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #242d49;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
