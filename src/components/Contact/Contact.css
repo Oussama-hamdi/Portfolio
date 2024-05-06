@@ -69,6 +69,12 @@
   background-color: #171c2d;
 }
 
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+  transition: var(--transition);
+  border-bottom: 1px solid rgb(45 57 231 / 87%) !important;
+}
+
 .contact .form-group textarea {
   min-height: 120px !important;
 }
