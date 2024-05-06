@@ -3,9 +3,9 @@ import Icon from "@mdi/react";
 import { mdiFilePdfBox, mdiGithub, mdiLinkedin, mdiWhatsapp } from "@mdi/js";
 import "./SocialLinks.css";
 
-function SocialLinks() {
+function SocialLinks({ fixed }) {
   return (
-    <div className="nav-links-icons">
+    <div className={`nav-links-icons ${fixed ? "fixed" : ""}`}>
       <ul className="nav-links">
         <li>
           <a
