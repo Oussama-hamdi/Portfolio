@@ -6,10 +6,13 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Certifications from "./components/Certifications/Certifications";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import GoToTopButton from "./components/GoToTopButton/GoToTopButton";
 
 function App() {
   return (
     <main className="App">
+      <GoToTopButton />
       <Navbar />
       <Home />
       <About />
@@ -17,6 +20,7 @@ function App() {
       <Skills />
       <Certifications />
       <Contact />
+      <Footer />
     </main>
   );
 }

@@ -86,6 +86,7 @@ h6 {
 }
 
 .App {
+  position: relative;
   font-family: "Roboto", sans-serif;
 }
 
