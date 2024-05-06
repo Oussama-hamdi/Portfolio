@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@mdi/js": "^7.4.47",
     "@mdi/react": "^1.6.1",
     "@testing-library/jest-dom": "^5.16.5",

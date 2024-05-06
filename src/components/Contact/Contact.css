@@ -69,6 +69,10 @@
   background-color: #171c2d;
 }
 
+.contact .form-group textarea {
+  min-height: 120px !important;
+}
+
 .contact .btn-submit {
   background-color: #242d49;
   color: white;
