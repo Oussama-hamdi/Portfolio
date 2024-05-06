@@ -1,0 +1,19 @@
+footer {
+  padding: 20px 20px 40px;
+  color: var(--blue-card);
+  text-align: center;
+}
+
+footer .nav-links {
+  justify-content: center;
+}
+
+footer .nav-links li a svg {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+footer span {
+  font-weight: 700;
+  color: var(--orange);
+}
