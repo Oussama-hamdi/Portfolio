@@ -2,6 +2,7 @@
   background-color: #242d493b;
   color: var(--blue-card);
   padding: 50px 0;
+  position: relative;
 }
 
 .about .about-content {
