@@ -1,0 +1,41 @@
+.go-to-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.go-to-top-button.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-to-top-button button {
+  background-color: rgb(45 57 231 / 87%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  transition: var(--transition);
+}
+
+.go-to-top-button button:hover {
+  background-color: rgba(29, 40, 190, 0.87);
+}
+
+/* Keyframe animation for bouncing effect */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
