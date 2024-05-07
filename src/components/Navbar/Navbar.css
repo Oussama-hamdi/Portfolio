@@ -1,6 +1,6 @@
 .navbar {
   position: relative;
-  background-color: #242d493b;
+  background-color: var(--background-overlay);
 }
 
 .navbar .nav-parent {
@@ -11,15 +11,8 @@
 }
 
 .navbar .logo-parent h1 a {
-  background: linear-gradient(
-    140deg,
-    rgb(208, 212, 214) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: var(--orange);
+  font-size: 1.5rem;
 }
 
 .navbar .nav-links {
@@ -30,14 +23,9 @@
 
 .navbar .nav-links a {
   padding: 5px 10px;
-  color: var(--blue-card);
+  color: var(--text-color);
   text-decoration: none;
   transition: var(--transition);
-}
-
-.navbar .nav-links li:last-child {
-  color: var(--blue-card);
-  cursor: pointer;
 }
 
 .navbar .nav-links li:hover a {
@@ -49,8 +37,8 @@
     opacity: 0;
     position: absolute;
     right: -50%;
-    top: 65px;
-    background-color: var(--black);
+    top: 56px;
+    background-color: var(--background-color);
     transition: var(--transition);
     width: 200px;
   }
@@ -64,20 +52,19 @@
     align-items: flex-start;
     gap: 10px;
     width: 100%;
-    background-color: var(--black);
   }
-  .navbar .nav-links-parent .nav-links li:not(:last-child) {
-    transition: var(--transition) transform;
+  .navbar .nav-links-parent .nav-links li {
+    transition: var(--transition) margin;
     border-bottom: 1px solid #ddd;
     width: 100%;
     padding: 10px;
   }
   .navbar .nav-links-parent .nav-links li:last-child {
-    align-self: center;
     padding: 10px;
+    border: none;
   }
-  .navbar .nav-links-parent .nav-links li:not(:last-child):hover {
-    transform: translateX(10px);
+  .navbar .nav-links-parent .nav-links li:hover a {
+    margin-left: 10px;
   }
   .navbar .nav-links-parent.active a {
     padding: 0;
@@ -100,7 +87,7 @@ nav .container .burger-menu span {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #333;
+  background: var(--burger-menu-background);
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -202,3 +189,5 @@ svg {
 }
 
 /** End Animation **/
+
+/* Navbar.css */

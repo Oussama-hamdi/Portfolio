@@ -1,7 +1,6 @@
-import { useEffect, useRef } from "react";
+// Navbar.js
+import React, { useEffect, useRef } from "react";
 import "./Navbar.css";
-import Icon from "@mdi/react";
-import { mdiWeatherNight } from "@mdi/js";
 
 const Navbar = () => {
   const burgerMenuRef = useRef(null);
@@ -31,28 +30,14 @@ const Navbar = () => {
       }
     });
   }, []);
+
   return (
     <nav className="navbar">
       <div className="container">
         <div className="nav-parent">
           <div className="logo-parent">
             <h1>
-              <a href="#home">
-                <svg viewBox="0 0 960 300">
-                  <symbol id="s-text">
-                    <text textAnchor="middle" x="50%" y="80%">
-                      Oussama
-                    </text>
-                  </symbol>
-                  <g className="g-ants">
-                    <use xlinkHref="#s-text" className="text-copy"></use>
-                    <use xlinkHref="#s-text" className="text-copy"></use>
-                    <use xlinkHref="#s-text" className="text-copy"></use>
-                    <use xlinkHref="#s-text" className="text-copy"></use>
-                    <use xlinkHref="#s-text" className="text-copy"></use>
-                  </g>
-                </svg>
-              </a>
+              <a href="#home">Oussama</a>
             </h1>
           </div>
           <div ref={burgerMenuRef} className="burger-menu">
@@ -64,7 +49,9 @@ const Navbar = () => {
           <div ref={linksParentRef} className="nav-links-parent">
             <ul className="nav-links">
               <li>
-                <a href="#home">Home</a>
+                <a onClick={() => console.log("Hey")} href="#home">
+                  Home
+                </a>
               </li>
               <li>
                 <a href="#about">About</a>
@@ -80,9 +67,6 @@ const Navbar = () => {
               </li>
               <li>
                 <a href="#contact">Contact</a>
-              </li>
-              <li>
-                <Icon path={mdiWeatherNight} size={1} />
               </li>
             </ul>
           </div>

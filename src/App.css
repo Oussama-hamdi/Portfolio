@@ -1,8 +1,18 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background-color: #141825;
+  background-color: var(--body-color);
+  transition: background-color var(--transition);
+}
+
+::selection {
+  background-color: var(--selection-color);
+  color: white;
 }
 
 .root {
@@ -94,15 +104,28 @@ body::-webkit-scrollbar {
   width: 16px;
 }
 
-body::-webkit-scrollbar-track {
+body[data-theme="dark"]::-webkit-scrollbar-track {
   background: #242d49;
 }
 
-body::-webkit-scrollbar-thumb {
+body[data-theme="dark"]::-webkit-scrollbar-thumb {
   background: #777;
   border-radius: 2px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+body[data-theme="dark"]::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+body[data-theme="light"]::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+body[data-theme="light"]::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+body[data-theme="light"]::-webkit-scrollbar-thumb:hover {
+  background: #999;
 }

@@ -33,7 +33,6 @@ function Home() {
             <div className="img-parent"></div>
           </div>
         </div>
-        {/* <SocialLinks />*/}
       </div>
     </section>
   );

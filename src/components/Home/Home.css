@@ -14,7 +14,7 @@
 }
 
 .home .parent-content .left-content .greeting {
-  color: var(--blue-card);
+  color: var(--text-color);
   font-size: 1.7rem;
 }
 
@@ -22,10 +22,7 @@
   font-size: 20px;
 }
 
-.home .parent-content .left-content .greeting .name span {
-  color: var(--orange);
-}
-
+.home .parent-content .left-content .greeting .name span,
 .home .parent-content .left-content .greeting .job-title {
   color: var(--orange);
 }
@@ -35,25 +32,6 @@
   margin-top: 30px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--orange);
-  border: none;
-  color: var(--blue-card);
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color var(--transition), box-shadow var(--transition);
-  box-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange);
-}
-
-.btn:hover {
-  box-shadow: 0px 0px 15px var(--gray), 0px 0px 25px var(--orange),
-    0px 0px 35px var(--gray);
-}
 .home .parent-content .right-content .img-parent {
   width: 350px;
   height: 350px;
@@ -62,12 +40,14 @@
   background-size: cover;
   animation: morph 8s ease-in-out infinite;
   background-blend-mode: multiply;
-  transition: var(--transition) box-shadow;
-  box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.8);
+  transition: var(--transition) box-shadow, var(--transition) filter;
+  box-shadow: inset 0px 0px 0px 18px var(--home-img-border);
+  filter: grayscale(1);
 }
 
 .home .parent-content .right-content .img-parent:hover {
-  box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.5);
+  filter: grayscale(0);
+  box-shadow: inset 0px 0px 0px 18px var(--home-img-border-hover);
 }
 
 /** Start Media Query **/

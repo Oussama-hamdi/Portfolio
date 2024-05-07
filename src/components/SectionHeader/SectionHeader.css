@@ -2,11 +2,10 @@
 
 .title {
   position: relative;
-  color: #2196f3;
   text-transform: uppercase;
   overflow: hidden;
   transition: var(--transition);
-  color: var(--blue-card);
+  color: var(--text-color);
   font-weight: 600;
   font-size: 30px;
   margin: 50px auto;

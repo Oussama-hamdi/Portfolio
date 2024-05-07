@@ -1,3 +1,5 @@
+// App.js
+import React, { useEffect } from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -8,12 +10,31 @@ import Certifications from "./components/Certifications/Certifications";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import GoToTopButton from "./components/GoToTopButton/GoToTopButton";
+import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 
 function App() {
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.body.setAttribute("data-theme", savedTheme);
+    } else {
+      document.body.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const currentTheme = document.body.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.body.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+
   return (
     <main className="App">
       <GoToTopButton />
-      <Navbar />
+      <ThemeToggle />
+      <Navbar toggleTheme={toggleTheme} />
       <Home />
       <About />
       <Projects />
