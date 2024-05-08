@@ -1,5 +1,5 @@
 .skills {
-  background-color: #242d493b;
+  background-color: var(--section-color);
   padding: 50px 0;
 }
 
@@ -9,7 +9,7 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 50px;
-  color: var(--blue-card);
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -19,7 +19,7 @@
 }
 
 .skills .skills-content h3 {
-  color: var(--blue-card);
+  color: var(--text-color);
   margin-bottom: 2rem;
   font-size: 24px;
   text-align: center;
@@ -39,7 +39,7 @@
 .skills .skills-content .skill-bar .bar {
   width: 100%;
   height: 10px;
-  background-color: #242d49;
+  background-color: var(--black);
   border-radius: 25px;
   margin-top: 10px;
   position: relative;
@@ -51,8 +51,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #2d39e7de;
-  box-shadow: 0 0 1rem 0.2rem #2d39e7de;
+  background-color: var(--orange);
+  box-shadow: var(--skills-box-shadow);
   transition: width 0.5s ease-in-out;
 }
 
@@ -152,6 +152,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 576px) {
+  .professional {
+    grid-template-columns: 1fr;
+  }
+}
+
 .professional .box {
   position: relative;
   margin: 10px 0;
@@ -168,7 +174,7 @@
 
 .professional .box .text {
   font-size: 1rem;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -208,5 +214,16 @@
   100% {
     background-color: #2d39e7de;
     box-shadow: 0 0 1rem 0.1rem #2d39e7de;
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-color: var(--orange);
+    box-shadow: none;
+  }
+  100% {
+    background-color: var(--orange);
+    box-shadow: var(--skills-box-shadow);
   }
 }

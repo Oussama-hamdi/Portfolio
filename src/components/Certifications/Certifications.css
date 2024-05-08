@@ -9,11 +9,11 @@
 }
 
 .certification {
-  background-color: #242d49a6;
+  background-color: var(--background-color);
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--certificates-box-shadow);
   transition: all var(--transition);
 }
 
@@ -46,7 +46,7 @@
 .certification .certification-title {
   text-align: center;
   font-weight: 600;
-  color: var(--blue-card);
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
@@ -55,5 +55,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--blue-card);
+  color: var(--text-color);
 }

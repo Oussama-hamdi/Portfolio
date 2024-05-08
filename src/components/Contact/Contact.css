@@ -1,5 +1,5 @@
 .contact {
-  background-color: #242d493b;
+  background-color: var(--section-color);
   padding: 50px 0;
 }
 
@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-color);
 }
 
 .contact .form-container .contact-form {
@@ -15,7 +15,7 @@
   max-width: 600px;
   padding: 20px;
   border-radius: 5px;
-  border: 1px solid #242d49;
+  border: var(--border-color);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -40,12 +40,12 @@
   border: none;
   border-radius: 5px;
   background-color: transparent;
-  color: #777;
+  color: var(--gray);
   position: relative;
 }
 
 .contact .form-group label {
-  color: #777;
+  color: var(--gray);
   font-size: 1rem;
   font-weight: 500;
   position: absolute;
@@ -61,18 +61,19 @@
 .has-data {
   transform: translate(0px, -20px) !important;
   font-size: 12px !important;
-  border-left: 1px solid #242d49;
-  border-right: 1px solid #242d49;
+  border-left: var(--border-color);
+  border-right: var(--border-color);
   padding: 0px 5px !important;
   left: 10px !important;
   top: 10px !important;
-  background-color: #171c2d;
+  background-color: var(--label-background-color);
 }
 
 .contact .form-group input:focus,
 .contact .form-group textarea:focus {
-  transition: var(--transition);
-  border-bottom: 1px solid rgb(45 57 231 / 87%) !important;
+  transition: var(--transition) transform, var(--transition) border-color,
+    var(--transition) background;
+  border-bottom: var(--input-border-bottom-color) !important;
 }
 
 .contact .form-group textarea {
@@ -99,11 +100,11 @@
 }
 
 #message::-webkit-scrollbar-track {
-  background: #242d49;
+  background: var(--textarea-scrollbar-track);
 }
 
 #message::-webkit-scrollbar-thumb {
-  background: #777;
+  background: var(--textarea-scrollbar-thumb);
   border-radius: 2px;
 }
 

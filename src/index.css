@@ -1,18 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
+  --navbar-color: #242d493b;
+
   --body-color: #141825;
   --background-color: #242d49;
-  --navbar-color: #242d493b;
   --background-overlay: #242d493b;
   --burger-menu-background: #333;
+  --label-background-color: #171c2d;
+  --selection-color: var(--orange);
+  --textarea-scrollbar-track: #242d49;
 
   --text-color: #ddf8fe;
+  --textarea-scrollbar-thumb: #777;
+
+  --section-color: #242d493b;
 
   --home-img-border: rgba(255, 255, 255, 0.8);
   --home-img-border-hover: rgba(255, 255, 255, 0.5);
+  --border-color: 1px solid #242d49;
+  --input-border-bottom-color: 1px solid rgb(45 57 231 / 87%) !important;
 
-  --selection-color: var(--orange);
+  --skills-box-shadow: 0 0 1rem 0.02rem var(--orange);
+  --certificates-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   --black: #242d49;
   --orange: #fca61f;
@@ -24,16 +34,26 @@
 }
 
 [data-theme="light"] {
+  --navbar-color: #f5f5f5;
+
   --body-color: white;
   --background-color: #f5f5f5;
-  --background-overlay: #eee;
-  --navbar-color: #f5f5f5;
+  --background-overlay: rgb(238 238 238 / 42%);
   --burger-menu-background: #777;
+  --label-background-color: #f5f5f5;
+  --textarea-scrollbar-track: #eee;
 
   --text-color: #242d49;
+  --textarea-scrollbar-thumb: #999393;
+
+  --section-color: #f5f5f5;
 
   --home-img-border: rgba(128, 128, 128, 0.8);
   --home-img-border-hover: rgba(128, 128, 128, 0.5);
+  --input-border-bottom-color: 1px solid rgba(240, 162, 17, 0.87);
+
+  --skills-box-shadow: 0 0 0 0.02rem var(--orange);
+  --certificates-box-shadow: 1px 1px 5px 0px #9e9ea7;
 
   --text-light: #788097;
   --text-dark: #242d49;
