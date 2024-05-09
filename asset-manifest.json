@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Oussama-hamdi/Portfolio/static/css/main.03c4d15d.css",
+    "main.js": "/Oussama-hamdi/Portfolio/static/js/main.b5a96aed.js",
+    "static/media/hacker-rank-javascript.png": "/Oussama-hamdi/Portfolio/static/media/hacker-rank-javascript.5e566d7ab66f5e12c767.png",
+    "static/media/movie_land.png": "/Oussama-hamdi/Portfolio/static/media/movie_land.b1c51bf852840406c420.png",
+    "static/media/oussama.png": "/Oussama-hamdi/Portfolio/static/media/oussama.9eb5693164135a82ca53.png",
+    "static/media/CV_OussemaHamdi_WebDeveloper.pdf": "/Oussama-hamdi/Portfolio/static/media/CV_OussemaHamdi_WebDeveloper.19002bf61b2a771b5e4b.pdf",
+    "static/media/bits-and-bytes-of-computer-networking.jpeg": "/Oussama-hamdi/Portfolio/static/media/bits-and-bytes-of-computer-networking.b9d6b8c2e842b1b1dcd3.jpeg",
+    "static/media/technical-support-fundamentals.jpeg": "/Oussama-hamdi/Portfolio/static/media/technical-support-fundamentals.d8677ce5f0d1918304aa.jpeg",
+    "static/media/alx-program.png": "/Oussama-hamdi/Portfolio/static/media/alx-program.4534946f8b76849f2750.png",
+    "index.html": "/Oussama-hamdi/Portfolio/index.html",
+    "main.03c4d15d.css.map": "/Oussama-hamdi/Portfolio/static/css/main.03c4d15d.css.map",
+    "main.b5a96aed.js.map": "/Oussama-hamdi/Portfolio/static/js/main.b5a96aed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03c4d15d.css",
+    "static/js/main.b5a96aed.js"
+  ]
+}
