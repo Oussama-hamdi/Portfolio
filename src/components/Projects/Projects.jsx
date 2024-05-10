@@ -4,6 +4,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import Project from "./Project";
 import SocialLinks from "../SocialLinks/SocialLinks";
 
+// TODO: Fix the max-width of the project for smaller screens
 function Projects() {
   return (
     <section className="projects" id="projects">
