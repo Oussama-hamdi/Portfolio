@@ -3,6 +3,7 @@ import Icon from "@mdi/react";
 import { mdiWeatherNight, mdiWhiteBalanceSunny } from "@mdi/js";
 import "./ThemeToggle.css"; // Import CSS file for styles
 
+//TODO: Make the themeToggle draggable on mobile devices
 const ThemeToggle = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
