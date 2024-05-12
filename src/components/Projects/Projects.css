@@ -11,6 +11,13 @@
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .projects .projects-parent {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0;
+  }
+}
+
 .projects .projects-parent .project {
   overflow: hidden;
   margin: 10px;
@@ -45,23 +52,27 @@
   opacity: 1;
 }
 
-.projects .project .thumbnail .overlay a {
-  color: white;
+.projects .project .thumbnail .overlay div {
   background-color: #6e6e80af;
   border-radius: 50%;
   padding: 10px;
   transition: var(--transition);
 }
 
-.projects .project .thumbnail .overlay a:hover {
+.projects .project .thumbnail .overlay div a {
+  color: white;
+}
+
+.projects .project .thumbnail .overlay div:hover {
   background-color: #6e6e80;
   transform: scale(1.1);
 }
 
-.projects .project .thumbnail .overlay a:nth-child(1):hover {
+.projects .project .thumbnail .overlay div:nth-child(1):hover a,
+.projects .project .thumbnail .overlay div:nth-child(1):hover svg {
   color: orange;
 }
-.projects .project .thumbnail .overlay a:nth-child(2):hover {
+.projects .project .thumbnail .overlay div:nth-child(2):hover a {
   color: #333333;
 }
 
