@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "./static/css/main.bb9addbc.css",
-    "main.js": "./static/js/main.7efd6edc.js",
+    "main.css": "./static/css/main.a071f354.css",
+    "main.js": "./static/js/main.cd09b0af.js",
+    "static/media/eventify.png": "./static/media/eventify.0acd60643e0176ffaa58.png",
     "static/media/hacker-rank-javascript.png": "./static/media/hacker-rank-javascript.5e566d7ab66f5e12c767.png",
-    "static/media/movie_land.png": "./static/media/movie_land.b1c51bf852840406c420.png",
+    "static/media/kasper.png": "./static/media/kasper.191495772b5f2b40b270.png",
+    "static/media/special-design.png": "./static/media/special-design.598fb04cac0ae15e2c2c.png",
+    "static/media/gamer.png": "./static/media/gamer.605c4a72ef734df45b9f.png",
+    "static/media/pagination.png": "./static/media/pagination.fd1c9712e4493fe49b46.png",
     "static/media/oussama.png": "./static/media/oussama.9eb5693164135a82ca53.png",
+    "static/media/template-three.png": "./static/media/template-three.50eba192ec2d88fa034f.png",
+    "static/media/revupway.png": "./static/media/revupway.948a339ea674e35c421d.png",
+    "static/media/dashboard.png": "./static/media/dashboard.d45efb79e7f34ef33334.png",
     "static/media/CV_OussemaHamdi_WebDeveloper.pdf": "./static/media/CV_OussemaHamdi_WebDeveloper.19002bf61b2a771b5e4b.pdf",
     "static/media/bits-and-bytes-of-computer-networking.jpeg": "./static/media/bits-and-bytes-of-computer-networking.b9d6b8c2e842b1b1dcd3.jpeg",
     "static/media/technical-support-fundamentals.jpeg": "./static/media/technical-support-fundamentals.d8677ce5f0d1918304aa.jpeg",
     "static/media/alx-program.png": "./static/media/alx-program.4534946f8b76849f2750.png",
+    "static/media/pokemon.png": "./static/media/pokemon.f8f7a5a1e3e15c44e334.png",
     "index.html": "./index.html",
-    "main.bb9addbc.css.map": "./static/css/main.bb9addbc.css.map",
-    "main.7efd6edc.js.map": "./static/js/main.7efd6edc.js.map"
+    "main.a071f354.css.map": "./static/css/main.a071f354.css.map",
+    "main.cd09b0af.js.map": "./static/js/main.cd09b0af.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb9addbc.css",
-    "static/js/main.7efd6edc.js"
+    "static/css/main.a071f354.css",
+    "static/js/main.cd09b0af.js"
   ]
 }
