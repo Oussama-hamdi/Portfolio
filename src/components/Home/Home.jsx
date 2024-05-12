@@ -19,8 +19,8 @@ function Home() {
                 <span className="job-title">
                   <ReactTyped
                     strings={["Web Developer", "Software Engineer"]}
-                    typeSpeed={50}
-                    backSpeed={50}
+                    typeSpeed={80}
+                    backSpeed={80}
                     loop
                   />
                 </span>

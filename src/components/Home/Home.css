@@ -27,6 +27,12 @@
   color: var(--orange);
 }
 
+@media (max-width: 768px) {
+  .home .parent-content .left-content .greeting .nav-links {
+    justify-content: center;
+  }
+}
+
 .resume-btn {
   text-align: left;
   margin-top: 30px;
@@ -42,10 +48,13 @@
   background-blend-mode: multiply;
   transition: var(--transition) box-shadow, var(--transition) filter;
   box-shadow: inset 0px 0px 0px 18px var(--home-img-border);
+}
+
+body[data-theme="dark"] .home .parent-content .right-content .img-parent {
   filter: grayscale(1);
 }
 
-.home .parent-content .right-content .img-parent:hover {
+body[data-theme="dark"] .home .parent-content .right-content .img-parent:hover {
   filter: grayscale(0);
   box-shadow: inset 0px 0px 0px 18px var(--home-img-border-hover);
 }
