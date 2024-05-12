@@ -4,8 +4,16 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import exhustedMan from "../../assets/oussama.png";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Resume from "../../assets/CV_OussemaHamdi_WebDeveloper.pdf";
+import ReactGA from "react-ga4";
 
 const About = () => {
+  const trackDownloadResume = () => {
+    ReactGA.event({
+      category: "Download",
+      action: "Download Resume",
+    });
+  };
+
   return (
     <section id="about" className="about">
       <div className="container">
@@ -15,7 +23,7 @@ const About = () => {
             <img src={exhustedMan} alt="Exhausted" />
           </div>
           <div className="about-content-text">
-            <h3 className="about-content-header">Who i'm i?</h3>
+            <h3 className="about-content-header">Who I Am?</h3>
             <br />
 
             <p>
@@ -46,7 +54,12 @@ const About = () => {
             </p>
             <SocialLinks />
             <div className="resume-btn">
-              <a className="btn" href={Resume} download="Resume">
+              <a
+                className="btn"
+                href={Resume}
+                download="Resume"
+                onClick={trackDownloadResume}
+              >
                 Download Resume
               </a>
             </div>

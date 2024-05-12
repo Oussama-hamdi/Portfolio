@@ -11,6 +11,16 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import GoToTopButton from "./components/GoToTopButton/GoToTopButton";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
+import ReactGA from "react-ga4";
+
+// Google Analytics Measurement ID
+const MEASUREMENT_ID = process.env.REACT_APP_MEASUREMENT_ID;
+
+// Initialize Google Analytics
+ReactGA.initialize(MEASUREMENT_ID);
+
+// Track initial pageview
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
 function App() {
   useEffect(() => {

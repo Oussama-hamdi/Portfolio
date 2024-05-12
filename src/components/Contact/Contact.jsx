@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import ReactGA from "react-ga4";
 
 //TODO: Add an alert meassage to show the user that the email has been sent successfully
 function Contact() {
@@ -27,10 +28,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Replace with your EmailJS service ID
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Replace with your EmailJS Public Key
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -38,6 +39,13 @@ function Contact() {
           console.log("Form data:", formData);
           console.log("Submitted form data:", new FormData(formRef.current));
           console.log("Successfully submitted the form!");
+
+          // Track the successful form submission
+          ReactGA.event({
+            category: "Contact Form",
+            action: "Form Submission",
+          });
+
           // Clear the form fields after successful submission
           setFormData({
             name: "",
