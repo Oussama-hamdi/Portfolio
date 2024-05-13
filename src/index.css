@@ -10,6 +10,7 @@
   --label-background-color: #171c2d;
   --selection-color: var(--orange);
   --textarea-scrollbar-track: #242d49;
+  --project-background-color: #242d49;
 
   --text-color: #ddf8fe;
   --textarea-scrollbar-thumb: #777;
@@ -42,6 +43,7 @@
   --burger-menu-background: #777;
   --label-background-color: #f5f5f5;
   --textarea-scrollbar-track: #eee;
+  --project-background-color: #fff;
 
   --text-color: #242d49;
   --textarea-scrollbar-thumb: #999393;

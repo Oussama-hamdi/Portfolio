@@ -59,7 +59,10 @@ function Project({
       <div className="project-info">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>
-        <div className="tech-stack">Tech Stack: {techStack.join(", ")}</div>
+        <br />
+        <div className="tech-stack">
+          <span>Tech Stack:</span> {techStack.join(", ")}
+        </div>
       </div>
     </Tilt>
   );
