@@ -22,7 +22,7 @@
   --border-color: 1px solid #242d49;
   --input-border-bottom-color: 1px solid rgb(45 57 231 / 87%) !important;
 
-  --skills-box-shadow: 0 0 1rem 0.02rem var(--orange);
+  --project-box-shadow: none;
   --certificates-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   --black: #242d49;
@@ -55,6 +55,7 @@
   --input-border-bottom-color: 1px solid rgba(240, 162, 17, 0.87);
 
   --skills-box-shadow: 0 0 0 0.02rem var(--orange);
+  --project-box-shadow: 1px 1px 5px 0px #9e9ea7;
   --certificates-box-shadow: 1px 1px 5px 0px #9e9ea7;
 
   --text-light: #788097;

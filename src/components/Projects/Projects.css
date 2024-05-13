@@ -26,6 +26,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: var(--text-color);
+  box-shadow: var(--project-box-shadow);
 }
 
 .projects .project .thumbnail {
