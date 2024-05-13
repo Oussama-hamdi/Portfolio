@@ -61,8 +61,9 @@
 .skills .skills-content .skill-bar .bar span.javascript,
 .skills .skills-content .skill-bar .bar span.reactjs,
 .skills .skills-content .skill-bar .bar span.git,
-.skills .skills-content .skill-bar .bar span.c,
-.skills .skills-content .skill-bar .bar span.python {
+.skills .skills-content .skill-bar .bar span.nodejs,
+.skills .skills-content .skill-bar .bar span.expressjs,
+.skills .skills-content .skill-bar .bar span.mongodb {
   animation: 1s ease-in-out forwards;
 }
 
@@ -81,11 +82,14 @@
 .skills .skills-content .skill-bar .bar span.git.animate {
   animation-name: git;
 }
-.skills .skills-content .skill-bar .bar span.c.animate {
-  animation-name: c;
+.skills .skills-content .skill-bar .bar span.nodejs.animate {
+  animation-name: nodejs;
 }
-.skills .skills-content .skill-bar .bar span.python.animate {
-  animation-name: python;
+.skills .skills-content .skill-bar .bar span.expressjs.animate {
+  animation-name: expressjs;
+}
+.skills .skills-content .skill-bar .bar span.mongodb.animate {
+  animation-name: mongodb;
 }
 
 @keyframes html {
@@ -128,20 +132,28 @@
     width: 87%;
   }
 }
-@keyframes c {
+@keyframes nodejs {
   0% {
     width: 0%;
   }
   100% {
-    width: 47%;
+    width: 60%;
   }
 }
-@keyframes python {
+@keyframes expressjs {
   0% {
     width: 0%;
   }
   100% {
-    width: 68%;
+    width: 65%;
+  }
+}
+@keyframes mongodb {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
   }
 }
 

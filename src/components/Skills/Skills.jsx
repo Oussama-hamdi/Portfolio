@@ -64,14 +64,19 @@ function Skills() {
               ref={(el) => (progressBarRefs.current[4] = el)}
             />
             <TechnicalSkills
-              skillName={"C"}
-              skillLevel={47}
+              skillName={"NodeJs"}
+              skillLevel={60}
               ref={(el) => (progressBarRefs.current[5] = el)}
             />
             <TechnicalSkills
-              skillName={"Python"}
-              skillLevel={68}
+              skillName={"ExpressJs"}
+              skillLevel={65}
               ref={(el) => (progressBarRefs.current[6] = el)}
+            />
+            <TechnicalSkills
+              skillName={"MongoDB"}
+              skillLevel={50}
+              ref={(el) => (progressBarRefs.current[7] = el)}
             />
           </div>
           <div className="right-skill">

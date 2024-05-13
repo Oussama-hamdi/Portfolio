@@ -109,7 +109,6 @@ export const projectsData = [
     livePreview: true,
   },
   {
-    //Update the project so when i reach the end of pagination i will disable the next button and when i reach the first page i will disable the previous button
     title: "Pagination",
     description:
       "This project is a simple product pagination implemented in React, utilizing an API for fetching product data.",
