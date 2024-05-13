@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.a071f354.css",
-    "main.js": "./static/js/main.a36f7cb6.js",
+    "main.css": "./static/css/main.3660fd09.css",
+    "main.js": "./static/js/main.716b0180.js",
     "static/media/eventify.png": "./static/media/eventify.0acd60643e0176ffaa58.png",
     "static/media/hacker-rank-javascript.png": "./static/media/hacker-rank-javascript.5e566d7ab66f5e12c767.png",
     "static/media/kasper.png": "./static/media/kasper.191495772b5f2b40b270.png",
+    "static/media/driveSync.png": "./static/media/driveSync.d37f803f1541e79f1314.png",
     "static/media/special-design.png": "./static/media/special-design.598fb04cac0ae15e2c2c.png",
     "static/media/gamer.png": "./static/media/gamer.605c4a72ef734df45b9f.png",
     "static/media/pagination.png": "./static/media/pagination.fd1c9712e4493fe49b46.png",
@@ -18,11 +19,11 @@
     "static/media/alx-program.png": "./static/media/alx-program.4534946f8b76849f2750.png",
     "static/media/pokemon.png": "./static/media/pokemon.f8f7a5a1e3e15c44e334.png",
     "index.html": "./index.html",
-    "main.a071f354.css.map": "./static/css/main.a071f354.css.map",
-    "main.a36f7cb6.js.map": "./static/js/main.a36f7cb6.js.map"
+    "main.3660fd09.css.map": "./static/css/main.3660fd09.css.map",
+    "main.716b0180.js.map": "./static/js/main.716b0180.js.map"
   },
   "entrypoints": [
-    "static/css/main.a071f354.css",
-    "static/js/main.a36f7cb6.js"
+    "static/css/main.3660fd09.css",
+    "static/js/main.716b0180.js"
   ]
 }
