@@ -22,7 +22,6 @@ ReactGA.initialize(MEASUREMENT_ID);
 // Track initial pageview
 ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
-// TODO: Add a loading spinner while the page is loading
 function App() {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");

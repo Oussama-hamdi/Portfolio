@@ -109,6 +109,16 @@ export const projectsData = [
     livePreview: true,
   },
   {
+    title: "Pokemon Finder",
+    description:
+      "This project is a simple Pokémon finder allowing users to search for Pokémon by name or element. Users can click on a Pokémon to view its details, including a stats graph. Through this project, I gained experience in integrating API data and creating dynamic user interfaces to enhance the browsing experience.",
+    imgUrl: Pokemon,
+    githubUrl: "https://github.com/Oussama-hamdi/pokeapi-nextjs-app",
+    liveUrl: undefined,
+    techStack: ["NextJs", "Styled-component", "React-ApexCharts", "API"],
+    livePreview: false,
+  },
+  {
     title: "Pagination",
     description:
       "This project is a simple product pagination implemented in React, utilizing an API for fetching product data.",
@@ -117,15 +127,5 @@ export const projectsData = [
     liveUrl: "https://react-product-pagination.surge.sh/",
     techStack: ["React", "API", "Css3"],
     livePreview: true,
-  },
-  {
-    title: "Pokemon Finder",
-    description:
-      "This project is a simple Pokémon finder allowing users to search for Pokémon by name or element. Users can click on a Pokémon to view its details, including a stats graph. Through this project, I gained experience in integrating API data and creating dynamic user interfaces to enhance the browsing experience.",
-    imgUrl: Pokemon,
-    githubUrl: "https://github.com/Oussama-hamdi/pokeapi-nextjs-app",
-    liveUrl: undefined,
-    techStack: ["NextJs", "Styled-component", "React-ApexCharts"],
-    livePreview: false,
   },
 ];

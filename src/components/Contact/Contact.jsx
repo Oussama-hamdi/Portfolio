@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import ReactGA from "react-ga4";
+import AlertMessage from "./AlertMessage";
 
-//TODO: Add an alert meassage to show the user that the email has been sent successfully
 function Contact() {
   const formRef = useRef();
   const [formData, setFormData] = useState({
@@ -14,6 +14,7 @@ function Contact() {
     message: "",
   });
   const [emailDataValidation, setEmailDataValidation] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,9 +37,6 @@ function Contact() {
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);
-          console.log("Form data:", formData);
-          console.log("Submitted form data:", new FormData(formRef.current));
-          console.log("Successfully submitted the form!");
 
           // Track the successful form submission
           ReactGA.event({
@@ -53,6 +51,9 @@ function Contact() {
             subject: "",
             message: "",
           });
+
+          // Show success alert
+          setShowAlert(true);
         },
         (error) => {
           console.error("Email sending failed:", error.text);
@@ -60,11 +61,22 @@ function Contact() {
       );
   };
 
+  useEffect(() => {
+    // Hide the alert after 3 seconds
+    const timeout = setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+
+    // Clear timeout on component unmount
+    return () => clearTimeout(timeout);
+  }, [showAlert]);
+
   return (
     <section className="contact" id="contact">
       <div className="container">
         <SectionHeader title="Get in Touch" />
         <div className="form-container">
+          {showAlert && <AlertMessage />}
           <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
             <h4 className="content-title">Message Me</h4>
             <div className="form-group">
