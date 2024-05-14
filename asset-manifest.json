@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.3660fd09.css",
-    "main.js": "./static/js/main.716b0180.js",
+    "main.css": "./static/css/main.4a4074c0.css",
+    "main.js": "./static/js/main.03ea4c7d.js",
     "static/media/eventify.png": "./static/media/eventify.0acd60643e0176ffaa58.png",
     "static/media/hacker-rank-javascript.png": "./static/media/hacker-rank-javascript.5e566d7ab66f5e12c767.png",
     "static/media/kasper.png": "./static/media/kasper.191495772b5f2b40b270.png",
@@ -19,11 +19,11 @@
     "static/media/alx-program.png": "./static/media/alx-program.4534946f8b76849f2750.png",
     "static/media/pokemon.png": "./static/media/pokemon.f8f7a5a1e3e15c44e334.png",
     "index.html": "./index.html",
-    "main.3660fd09.css.map": "./static/css/main.3660fd09.css.map",
-    "main.716b0180.js.map": "./static/js/main.716b0180.js.map"
+    "main.4a4074c0.css.map": "./static/css/main.4a4074c0.css.map",
+    "main.03ea4c7d.js.map": "./static/js/main.03ea4c7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3660fd09.css",
-    "static/js/main.716b0180.js"
+    "static/css/main.4a4074c0.css",
+    "static/js/main.03ea4c7d.js"
   ]
 }
