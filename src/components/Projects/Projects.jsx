@@ -5,13 +5,12 @@ import Project from "./Project";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import { projectsData } from "./projectsData";
 
-// TODO: Fix the max-width of the project for smaller screens
 function Projects() {
   return (
     <section className="projects" id="portfolio">
       <SocialLinks fixed={true} />
       <div className="container">
-        <SectionHeader title="Projects" />
+        <SectionHeader title="Portfolio" />
         <div className="projects-parent">
           {projectsData.map((project, index) => (
             <Project
