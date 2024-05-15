@@ -45,6 +45,7 @@
   .navbar .nav-links-parent.active {
     right: 0;
     opacity: 1;
+    z-index: 1000;
   }
   .navbar .nav-links-parent .nav-links {
     display: flex;
