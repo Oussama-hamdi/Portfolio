@@ -23,9 +23,9 @@
 }
 .title:hover {
   color: white;
-  background: rgb(45 57 231 / 87%);
-  box-shadow: 0 0 10px rgb(45 57 231 / 87%), 0 0 40px rgb(45 57 231 / 87%),
-    0 0 80px rgb(45 57 231 / 87%);
+  background: var(--sectionHeader-color);
+  box-shadow: 0 0 10px var(--sectionHeader-color),
+    0 0 40px var(--sectionHeader-color), 0 0 80px var(--sectionHeader-color);
   transition-delay: 1s;
 }
 .title span {
@@ -37,7 +37,7 @@
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgb(45 57 231 / 87%));
+  background: linear-gradient(90deg, transparent, var(--sectionHeader-color));
 }
 .title:hover span:nth-child(1) {
   left: 100%;
@@ -49,7 +49,7 @@
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, rgb(45 57 231 / 87%));
+  background: linear-gradient(270deg, transparent, var(--sectionHeader-color));
 }
 .title:hover span:nth-child(3) {
   right: 100%;
@@ -62,7 +62,7 @@
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgb(45 57 231 / 87%));
+  background: linear-gradient(180deg, transparent, var(--sectionHeader-color));
 }
 .title:hover span:nth-child(2) {
   top: 100%;
@@ -75,7 +75,7 @@
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, rgb(45 57 231 / 87%));
+  background: linear-gradient(360deg, transparent, var(--sectionHeader-color));
 }
 .title:hover span:nth-child(4) {
   bottom: 100%;
