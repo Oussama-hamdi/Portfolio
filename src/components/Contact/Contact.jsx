@@ -77,7 +77,12 @@ function Contact() {
         <SectionHeader title="Get in Touch" />
         <div className="form-container">
           {showAlert && <AlertMessage />}
-          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="contact-form"
+            data-aos="flip-down"
+          >
             <h4 className="content-title">Message Me</h4>
             <div className="form-group">
               <div className="name-email">

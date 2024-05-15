@@ -11,9 +11,11 @@
   --selection-color: var(--orange);
   --textarea-scrollbar-track: #242d49;
   --project-background-color: #242d49;
+  --sectionHeader-color: rgb(45 57 231 / 87%);
 
   --text-color: #ddf8fe;
   --textarea-scrollbar-thumb: #777;
+  --input-text-color: white;
 
   --section-color: #242d493b;
 
@@ -28,9 +30,9 @@
   --black: #242d49;
   --orange: #fca61f;
   --gray: #788097;
-  --blue-card: #ddf8fe;
   --light: #d5e7f545;
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+
   --transition: 0.3s;
 }
 
@@ -47,6 +49,7 @@
 
   --text-color: #242d49;
   --textarea-scrollbar-thumb: #999393;
+  --input-text-color: #000;
 
   --section-color: #f5f5f5;
 

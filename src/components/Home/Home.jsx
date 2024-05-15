@@ -8,7 +8,7 @@ function Home() {
     <section id="home" className="home">
       <div className="container">
         <div className="parent-content">
-          <div className="left-content">
+          <div className="left-content" data-aos="fade-up">
             <div className="greeting">
               <p>Hello 👋,</p>
               <h1 className="name">
@@ -29,7 +29,7 @@ function Home() {
             </div>
           </div>
           {/* Right side content - Image */}
-          <div className="right-content">
+          <div className="right-content" data-aos="fade-down">
             <div className="img-parent"></div>
           </div>
         </div>

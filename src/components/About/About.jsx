@@ -19,10 +19,10 @@ const About = () => {
       <div className="container">
         <SectionHeader title="About Me" />
         <div className="about-content">
-          <div className="about-content-img">
+          <div className="about-content-img" data-aos="fade-right">
             <img src={exhustedMan} alt="Exhausted" />
           </div>
-          <div className="about-content-text">
+          <div className="about-content-text" data-aos="fade-left">
             <h3 className="about-content-header">Who I Am?</h3>
             <br />
 

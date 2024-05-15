@@ -14,6 +14,7 @@ function Projects() {
         <div className="projects-parent">
           {projectsData.map((project, index) => (
             <Project
+              animationPosition="zoom-in"
               key={index}
               title={project.title}
               description={project.description}

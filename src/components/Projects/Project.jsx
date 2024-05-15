@@ -23,45 +23,48 @@ function Project({
   liveUrl,
   techStack,
   livePreview,
+  animationPosition,
 }) {
   return (
     <Tilt className="project" options={defaultOptions}>
-      <div className="thumbnail">
-        <div className="overlay">
-          {livePreview ? (
+      <div data-aos={animationPosition}>
+        <div className="thumbnail">
+          <div className="overlay">
+            {livePreview ? (
+              <div>
+                <a
+                  href={liveUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Live Preview"
+                >
+                  <Icon path={mdiEyeOutline} size={1} />
+                </a>
+              </div>
+            ) : (
+              <div>
+                <Icon
+                  path={mdiEyeOffOutline}
+                  size={1}
+                  title="Live Preview not available"
+                />
+              </div>
+            )}
             <div>
-              <a
-                href={liveUrl}
-                rel="noreferrer"
-                target="_blank"
-                title="Live Preview"
-              >
-                <Icon path={mdiEyeOutline} size={1} />
+              <a href={githubUrl} rel="noreferrer" target="_blank">
+                <Icon path={mdiGithub} size={1} />
               </a>
             </div>
-          ) : (
-            <div>
-              <Icon
-                path={mdiEyeOffOutline}
-                size={1}
-                title="Live Preview not available"
-              />
-            </div>
-          )}
-          <div>
-            <a href={githubUrl} rel="noreferrer" target="_blank">
-              <Icon path={mdiGithub} size={1} />
-            </a>
           </div>
+          <img src={imgUrl} alt="Project" />
         </div>
-        <img src={imgUrl} alt="Project" />
-      </div>
-      <div className="project-info">
-        <h3 className="project-title">{title}</h3>
-        <p className="project-description">{description}</p>
-        <br />
-        <div className="tech-stack">
-          <span>Tech Stack:</span> {techStack.join(", ")}
+        <div className="project-info">
+          <h3 className="project-title">{title}</h3>
+          <p className="project-description">{description}</p>
+          <br />
+          <div className="tech-stack">
+            <span>Tech Stack:</span> {techStack.join(", ")}
+          </div>
         </div>
       </div>
     </Tilt>

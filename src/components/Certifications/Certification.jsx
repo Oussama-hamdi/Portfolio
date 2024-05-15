@@ -2,7 +2,7 @@ import React from "react";
 
 function Certification({ img, title, provider, date, link }) {
   return (
-    <div className="certification">
+    <div className="certification" data-aos="zoom-out">
       <div className="certification-img">
         <a href={link} target="_blank" rel="noreferrer">
           <img src={img} alt="Certification" />
