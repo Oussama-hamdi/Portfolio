@@ -220,17 +220,6 @@
 
 @keyframes glow {
   0% {
-    background-color: #242d49;
-    box-shadow: none;
-  }
-  100% {
-    background-color: #2d39e7de;
-    box-shadow: 0 0 1rem 0.1rem #2d39e7de;
-  }
-}
-
-@keyframes glow {
-  0% {
     background-color: var(--orange);
     box-shadow: none;
   }

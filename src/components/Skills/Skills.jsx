@@ -85,8 +85,9 @@ function Skills() {
               <SoftSkills skillName={"Problem-solving"} skillLevel={85} />
               <SoftSkills skillName={"Team work"} skillLevel={80} />
               <SoftSkills skillName={"Time management"} skillLevel={75} />
-              <SoftSkills skillName={"Problem-solving"} skillLevel={70} />
+              <SoftSkills skillName={"Communication"} skillLevel={78} />
               <SoftSkills skillName={"Attention to detail"} skillLevel={84} />
+              <SoftSkills skillName={"Self-Motivation"} skillLevel={90} />
             </div>
           </div>
         </div>
