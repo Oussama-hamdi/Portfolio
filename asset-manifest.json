@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5b693adb.css",
-    "main.js": "./static/js/main.bacfcd6b.js",
+    "main.js": "./static/js/main.9dc46752.js",
     "static/media/eventify.png": "./static/media/eventify.0acd60643e0176ffaa58.png",
     "static/media/hacker-rank-javascript.png": "./static/media/hacker-rank-javascript.5e566d7ab66f5e12c767.png",
     "static/media/kasper.png": "./static/media/kasper.191495772b5f2b40b270.png",
@@ -13,17 +13,17 @@
     "static/media/template-three.png": "./static/media/template-three.50eba192ec2d88fa034f.png",
     "static/media/revupway.png": "./static/media/revupway.948a339ea674e35c421d.png",
     "static/media/dashboard.png": "./static/media/dashboard.d45efb79e7f34ef33334.png",
-    "static/media/CV_OussemaHamdi_WebDeveloper.pdf": "./static/media/CV_OussemaHamdi_WebDeveloper.19002bf61b2a771b5e4b.pdf",
+    "static/media/CV_OussemaHamdi_WebDeveloper.pdf": "./static/media/CV_OussemaHamdi_WebDeveloper.5b75d0325cb20929ac56.pdf",
     "static/media/bits-and-bytes-of-computer-networking.jpeg": "./static/media/bits-and-bytes-of-computer-networking.b9d6b8c2e842b1b1dcd3.jpeg",
     "static/media/technical-support-fundamentals.jpeg": "./static/media/technical-support-fundamentals.d8677ce5f0d1918304aa.jpeg",
     "static/media/alx-program.png": "./static/media/alx-program.4534946f8b76849f2750.png",
     "static/media/pokemon.png": "./static/media/pokemon.f8f7a5a1e3e15c44e334.png",
     "index.html": "./index.html",
     "main.5b693adb.css.map": "./static/css/main.5b693adb.css.map",
-    "main.bacfcd6b.js.map": "./static/js/main.bacfcd6b.js.map"
+    "main.9dc46752.js.map": "./static/js/main.9dc46752.js.map"
   },
   "entrypoints": [
     "static/css/main.5b693adb.css",
-    "static/js/main.bacfcd6b.js"
+    "static/js/main.9dc46752.js"
   ]
 }
