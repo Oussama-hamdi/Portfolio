@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5b693adb.css",
-    "main.js": "./static/js/main.67c87d36.js",
+    "main.js": "./static/js/main.c9c9e2cf.js",
     "static/media/eventify.png": "./static/media/eventify.0acd60643e0176ffaa58.png",
     "static/media/hacker-rank-javascript.png": "./static/media/hacker-rank-javascript.5e566d7ab66f5e12c767.png",
     "static/media/kasper.png": "./static/media/kasper.191495772b5f2b40b270.png",
@@ -20,10 +20,10 @@
     "static/media/pokemon.png": "./static/media/pokemon.f8f7a5a1e3e15c44e334.png",
     "index.html": "./index.html",
     "main.5b693adb.css.map": "./static/css/main.5b693adb.css.map",
-    "main.67c87d36.js.map": "./static/js/main.67c87d36.js.map"
+    "main.c9c9e2cf.js.map": "./static/js/main.c9c9e2cf.js.map"
   },
   "entrypoints": [
     "static/css/main.5b693adb.css",
-    "static/js/main.67c87d36.js"
+    "static/js/main.c9c9e2cf.js"
   ]
 }
