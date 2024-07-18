@@ -1,3 +1,4 @@
+import Morent from "../../assets/project_images/morent.png";
 import Revupway from "../../assets/project_images/revupway.png";
 import Eventify from "../../assets/project_images/eventify.png";
 import DriveSync from "../../assets/project_images/driveSync.png";
@@ -10,6 +11,16 @@ import Pagination from "../../assets/project_images/pagination.png";
 import Pokemon from "../../assets/project_images/pokemon.png";
 
 export const projectsData = [
+  {
+    title: "Morent",
+    description:
+      "Morent is a project I developed to showcase my skills in web design and development. As part of a task assigned by a recruiter, I was required to convert a Figma design into a React application within 3 days. Morent serves as a platform for a fictional rental company, highlighting various rental services. This project demonstrates my ability to deliver modern, user-friendly websites tailored to specific business needs under tight deadlines.",
+    imgUrl: Morent,
+    githubUrl: "https://github.com/Oussama-hamdi/car-rent-website",
+    liveUrl: "https://oussama-hamdi.github.io/car-rent-website",
+    techStack: ["React", "CSS3", "Figma"],
+    livePreview: true,
+  },
   {
     title: "Revupway",
     description:
