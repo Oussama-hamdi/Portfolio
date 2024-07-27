@@ -1,4 +1,5 @@
 import Morent from "../../assets/project_images/morent.png";
+import ScreenshotApp from "../../assets/project_images/screenshotApp.png";
 import Revupway from "../../assets/project_images/revupway.png";
 import Eventify from "../../assets/project_images/eventify.png";
 import DriveSync from "../../assets/project_images/driveSync.png";
@@ -20,6 +21,23 @@ export const projectsData = [
     liveUrl: "https://oussama-hamdi.github.io/car-rent-website",
     techStack: ["React", "CSS3", "Figma"],
     livePreview: true,
+  },
+  {
+    title: "Screen Capture App",
+    description:
+      "The Screen Capture App is a full-stack application designed to periodically capture screenshots from a desktop environment. The app features a backend built with Node.js and Express for storing screenshots in MongoDB, a React frontend for displaying them, and Electron for desktop integration. WebSocket support is included for real-time updates.",
+    imgUrl: ScreenshotApp,
+    githubUrl: "https://github.com/Oussama-hamdi/screen-capture-app",
+    liveUrl: undefined,
+    techStack: [
+      "Node.js",
+      "Express.js",
+      "React",
+      "MongoDB",
+      "Electron",
+      "WebSocket",
+    ],
+    livePreview: false,
   },
   {
     title: "Revupway",
