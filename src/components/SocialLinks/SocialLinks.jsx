@@ -17,7 +17,7 @@ function SocialLinks({ fixed }) {
       <ul className="nav-links">
         <li>
           <a
-            href="https://drive.google.com/file/d/1u525zQ5rxGh9UNNCEShfwikxhfuO2-Fx/view?usp=sharing"
+            href="https://drive.google.com/file/d/1LzBsD8kmnXGpmdADyUxcyIZArb_K3zoT/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
             onClick={() => trackSocialLinkClick("Resume")}
